@@ -56,7 +56,7 @@ const Home = () => {
               <Button asChild className="btn-construction text-lg px-8 py-6">
                 <Link to="/features">Explore Features</Link>
               </Button>
-              <Button asChild variant="outline" className="text-white border-white hover:bg-white hover:text-construction-blue text-lg px-8 py-6">
+              <Button asChild className="bg-construction-orange hover:bg-construction-orange/90 text-white border-0 text-lg px-8 py-6">
                 <Link to="/about">Learn More</Link>
               </Button>
             </div>
