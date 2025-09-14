@@ -48,7 +48,7 @@ const About = () => {
           <div className="bg-destructive/10 border border-destructive/20 rounded-2xl p-8">
             <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
               <AlertTriangle className="h-8 w-8 text-destructive mr-3" />
-              The Problem
+              Problems faced by Workers
             </h2>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="mb-4">
