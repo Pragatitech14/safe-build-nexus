@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Construction theme colors
+        "construction-orange": "hsl(var(--construction-orange))",
+        "construction-blue": "hsl(var(--construction-blue))",
+        "safety-yellow": "hsl(var(--safety-yellow))",
+        "industrial-gray": "hsl(var(--industrial-gray))",
+        "light-gray": "hsl(var(--light-gray))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -84,6 +90,20 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fadeIn 0.6s ease-out forwards",
+        "slide-up": "slideUp 0.8s ease-out forwards",
+        "bounce-in": "bounceIn 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards",
+        "pulse-slow": "pulse 3s ease-in-out infinite",
+      },
+      backgroundImage: {
+        "gradient-construction": "var(--gradient-primary)",
+        "gradient-professional": "var(--gradient-secondary)",
+        "gradient-hero": "var(--gradient-hero)",
+      },
+      boxShadow: {
+        "construction": "var(--shadow-construction)",
+        "professional": "var(--shadow-professional)",
+        "soft": "var(--shadow-soft)",
       },
     },
   },
