@@ -1,4 +1,5 @@
 import { Target, Users, Wrench, AlertTriangle } from "lucide-react";
+import constructionWorkers from "@/assets/construction-workers.jpg";
 
 const About = () => {
   const technologies = [
@@ -46,25 +47,36 @@ const About = () => {
         {/* Problem Statement */}
         <section className="mb-16 animate-slide-up">
           <div className="bg-destructive/10 border border-destructive/20 rounded-2xl p-8">
-            <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
-              <AlertTriangle className="h-8 w-8 text-destructive mr-3" />
-              Problems faced by Workers
-            </h2>
-            <div className="prose prose-lg max-w-none text-muted-foreground">
-              <p className="mb-4">
-                Construction sites are among the most dangerous work environments, with workers facing numerous safety hazards daily. 
-                Traditional safety management relies heavily on manual monitoring and periodic inspections, leading to:
-              </p>
-              <ul className="list-disc list-inside space-y-2 mb-4">
-                <li>High accident rates due to inconsistent PPE compliance</li>
-                <li>Inadequate real-time safety monitoring</li>
-                <li>Limited accessibility to comprehensive safety training</li>
-                <li>Delayed emergency response times</li>
-                <li>Insufficient safety protocol awareness among workers</li>
-              </ul>
-              <p>
-                Our Smart Construction Safety Management System addresses these critical challenges through innovative AI-powered solutions.
-              </p>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
+                  <AlertTriangle className="h-8 w-8 text-destructive mr-3" />
+                  Problems faced by Workers
+                </h2>
+                <div className="prose prose-lg max-w-none text-muted-foreground">
+                  <p className="mb-4">
+                    Construction sites are among the most dangerous work environments, with workers facing numerous safety hazards daily. 
+                    Traditional safety management relies heavily on manual monitoring and periodic inspections, leading to:
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 mb-4">
+                    <li>High accident rates due to inconsistent PPE compliance</li>
+                    <li>Inadequate real-time safety monitoring</li>
+                    <li>Limited accessibility to comprehensive safety training</li>
+                    <li>Delayed emergency response times</li>
+                    <li>Insufficient safety protocol awareness among workers</li>
+                  </ul>
+                  <p>
+                    Our Smart Construction Safety Management System addresses these critical challenges through innovative AI-powered solutions.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <img 
+                  src={constructionWorkers} 
+                  alt="Construction workers on site wearing safety equipment" 
+                  className="rounded-xl shadow-lg w-full max-w-md object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>
