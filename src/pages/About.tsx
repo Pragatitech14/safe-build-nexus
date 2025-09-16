@@ -3,8 +3,8 @@ import constructionWorkers from "@/assets/construction-workers.jpg";
 
 const About = () => {
   const technologies = [
-    "React.js", "TensorFlow", "Computer Vision", "Machine Learning",
-    "Node.js", "MongoDB", "WebRTC", "Socket.io", "Three.js"
+    "Python", "JavaScript", "PyTorch", "OpenCV", 
+    "YOLOv8", "Flask", "React.js", "Tailwind CSS"
   ];
 
   const goals = [
