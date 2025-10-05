@@ -115,17 +115,64 @@ const Features = () => {
 
                   {/* Visual */}
                   <div className="lg:w-1/2 p-8 lg:p-12 flex items-center justify-center">
-                    <div className={`w-full max-w-md aspect-square rounded-3xl ${feature.bgColor} flex flex-col items-center justify-center relative overflow-hidden`}>
-                      <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/10"></div>
-                      <feature.icon className={`h-24 w-24 ${feature.color} mb-6 relative z-10`} />
-                      <feature.icon2 className={`h-16 w-16 ${feature.color} opacity-60 relative z-10`} />
-                      <div className="absolute bottom-4 right-4">
-                        <Users className={`h-8 w-8 ${feature.color} opacity-30`} />
+                    {feature.title === "AI Safety Chatbot" ? (
+                      <div className="w-full max-w-md bg-card border border-border rounded-2xl shadow-lg overflow-hidden">
+                        {/* Chatbot Demo Header */}
+                        <div className={`${feature.bgColor} p-4 flex items-center gap-3`}>
+                          <div className={`w-10 h-10 rounded-full ${feature.bgColor} border-2 border-current flex items-center justify-center`}>
+                            <Bot className={`h-6 w-6 ${feature.color}`} />
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-foreground">Safety Assistant</h4>
+                            <p className="text-xs text-muted-foreground">Always ready to help</p>
+                          </div>
+                        </div>
+                        
+                        {/* Demo Messages */}
+                        <div className="p-4 space-y-3 bg-muted/30 h-64 overflow-y-auto">
+                          <div className="flex justify-start">
+                            <div className={`max-w-[80%] rounded-2xl px-4 py-2 ${feature.bgColor}`}>
+                              <p className="text-sm text-foreground">Hello! How can I help with safety today?</p>
+                            </div>
+                          </div>
+                          <div className="flex justify-end">
+                            <div className="max-w-[80%] rounded-2xl px-4 py-2 bg-primary text-primary-foreground">
+                              <p className="text-sm">What PPE is required?</p>
+                            </div>
+                          </div>
+                          <div className="flex justify-start">
+                            <div className={`max-w-[80%] rounded-2xl px-4 py-2 ${feature.bgColor} animate-fade-in`}>
+                              <p className="text-sm text-foreground">Required PPE includes: hard hats, safety glasses, high-visibility vests, steel-toed boots, and gloves.</p>
+                            </div>
+                          </div>
+                          <div className="flex justify-start">
+                            <div className={`max-w-[80%] rounded-2xl px-4 py-2 ${feature.bgColor} animate-fade-in`}>
+                              <p className="text-sm text-muted-foreground italic">🤖 Powered by AI - Available 24/7</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Demo Input */}
+                        <div className="p-4 bg-card border-t border-border">
+                          <div className="flex gap-2 items-center bg-muted rounded-lg px-3 py-2">
+                            <MessageSquare className="h-4 w-4 text-muted-foreground" />
+                            <span className="text-sm text-muted-foreground">Try the chatbot below →</span>
+                          </div>
+                        </div>
                       </div>
-                      <div className="absolute top-4 left-4">
-                        <AlertTriangle className={`h-6 w-6 ${feature.color} opacity-40`} />
+                    ) : (
+                      <div className={`w-full max-w-md aspect-square rounded-3xl ${feature.bgColor} flex flex-col items-center justify-center relative overflow-hidden`}>
+                        <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/10"></div>
+                        <feature.icon className={`h-24 w-24 ${feature.color} mb-6 relative z-10`} />
+                        <feature.icon2 className={`h-16 w-16 ${feature.color} opacity-60 relative z-10`} />
+                        <div className="absolute bottom-4 right-4">
+                          <Users className={`h-8 w-8 ${feature.color} opacity-30`} />
+                        </div>
+                        <div className="absolute top-4 left-4">
+                          <AlertTriangle className={`h-6 w-6 ${feature.color} opacity-40`} />
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
                 </div>
               </div>
