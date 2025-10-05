@@ -1,4 +1,5 @@
 import { Shield, GraduationCap, Bot, Camera, Users, MessageSquare, CheckCircle, AlertTriangle, BookOpen } from "lucide-react";
+import ConstructionChatbot from "@/components/ConstructionChatbot";
 
 const Features = () => {
   const features = [
@@ -166,6 +167,8 @@ const Features = () => {
         </section>
 
       </div>
+      
+      <ConstructionChatbot />
     </div>
   );
 };
