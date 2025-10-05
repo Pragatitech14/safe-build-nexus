@@ -120,7 +120,9 @@ const Features = () => {
                         <Button 
                           onClick={() => {
                             if (feature.title === "AI Safety Chatbot") {
-                              navigate("/contact");
+                              navigate("/safety-chatbot");
+                            } else if (feature.title === "PPE Detection System") {
+                              navigate("/");
                             } else {
                               navigate("/");
                             }
